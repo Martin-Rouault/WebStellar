@@ -1,0 +1,23 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+
+	main {
+		flex-grow: 1;
+	}
+
+	footer {
+		bottom: 0;
+		width: 100%;
+	}
+	.scroll-button {
+		display: flex;
+		align-items: center;
+		transition: 0.1s ease-in-out;
+	}
+	.scroll-button:hover {
+		transform: scale(1.1);
+	}
+}

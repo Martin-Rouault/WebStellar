@@ -1,0 +1,57 @@
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83vh;
+  margin-top: 7vh;
+
+  .contact {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background: rgba(10, 10, 10, 0.583);
+    box-shadow: 0 8px 32px 0 #1b1c31b7;
+    border: 2px solid rgba(255, 255, 255, 0.238);
+    border-radius: 2vh;
+
+    &-legend {
+      font-weight: bold;
+      font-variant: small-caps;
+    }
+
+    &-mail,
+    &-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+      gap: 2vh;
+    }
+
+    &-label {
+      text-align: center;
+    }
+
+    &-mail-input {
+      width: 60%;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      border: 2px solid white;
+      padding-left: 15px;
+    }
+
+    &-message-text {
+      width: 60%;
+      height: 25vh;
+    }
+
+    &-button {
+      margin: 10px auto;
+      margin-top: 20px;
+      width: 60%;
+    }
+  }
+}

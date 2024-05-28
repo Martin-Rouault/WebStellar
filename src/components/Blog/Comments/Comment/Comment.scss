@@ -1,0 +1,42 @@
+.comment {
+  color: white;
+}
+
+.comment-section {
+  width: 80vw;
+  border-radius: 10px;
+  margin: 2vh auto;
+  padding: 2vh;
+  background: rgba(10, 10, 10, 0.583);
+  box-shadow: 0 8px 32px 0 #1b1c31b7;
+  border: 2px solid rgba(255, 255, 255, 0.238);
+
+  @media (max-width: 768px) {
+    width: 95vw;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.comment-text {
+  padding: 2vh .5vh;
+
+  @media (max-width: 768px) {
+    font-size: 2vh;
+  }
+}
+
+.comment-date {
+  color: rgb(154, 154, 154);
+  margin-bottom: 2vh;
+}
+
+

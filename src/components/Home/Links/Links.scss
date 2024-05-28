@@ -1,0 +1,49 @@
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vh;
+
+  &-all {
+    position: relative;
+    padding: 3vh;
+    transition: all .50s ease;
+
+    &:hover {
+      transform: translateY(-5px) scale(1.03);
+
+      .links-title {
+        text-decoration: underline; // Ajoute le soulignement au survol
+      }
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-shadow: 4px 4px 5px #141212;
+    z-index: 2;
+    margin: auto;
+    font-size: 3vh;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+
+  &-image {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.70) 0px 15px 12px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .links {
+    gap: 5rem;
+  }
+}

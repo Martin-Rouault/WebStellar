@@ -1,0 +1,130 @@
+.infoPlanet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  height: 70vh;
+  margin: 2vh;
+  padding: 2vh 2vh;
+  gap: 2vh;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.63);
+  box-shadow: 0 8px 32px 0 #1b1c31b7;
+  backdrop-filter: blur(3px);
+  border-bottom: solid 3px #1b1c31;
+  border-left: solid 1px #1b1c31;
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    font-size: 2.5vh;
+    line-height: 1em;
+    border: none;
+    border-bottom: solid 3px #1b1c31;
+    background: linear-gradient(45deg, #3e2dac, #5355e6 50%, #102ca5);
+    background-size: 200% auto;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    &:hover {
+      background-position: right center;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &-close {
+    padding: 0.3rem;
+    position: absolute;
+    top: 0.8vh;
+    right: 0.8vh;
+  }
+
+  &-previous,
+  &-next {
+    width: 7vw;
+  }
+
+  &-info {
+    max-height: 90%;
+    max-width: 95%;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 1vw;
+    overflow-y: scroll;
+  }
+
+  &-image {
+    width: 20%;
+    animation: 0.8s planetRoll;
+  }
+
+  &-content {
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    padding-left: 1vw;
+
+    &-section {
+      margin-bottom: 1vh;
+
+      &-title {
+        text-align: center;
+        font-style: italic;
+        text-decoration-line: underline;
+        margin-bottom: 1vh;
+      }
+    }
+
+    li {
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+@keyframes planetRoll {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.infoPlanet-browser {
+  flex-direction: row;
+
+  .infoPlanet {
+    &-info {
+      width: 28vw;
+      height: 60vh;
+    }
+
+    &-image {
+      animation: none;
+    }
+
+    &-close {
+      position: absolute;
+    }
+
+    &-previous {
+      top: 50%;
+      left: 42vh;
+      width: 3.5vh;
+      height: 7vh;
+    }
+
+    &-next {
+      top: 50%;
+      right: 1vh;
+      width: 3.5vh;
+      height: 7vh;
+    }
+  }
+}

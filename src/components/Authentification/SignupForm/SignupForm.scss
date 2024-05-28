@@ -1,0 +1,46 @@
+@use 'src/styles/variables';
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e3ddd53f;
+  border-radius: .8em;
+  padding: 4em;
+  background-color: #e3ddd53f;
+  margin: 0 auto;
+  max-width: 35%;
+
+  &-message {
+    background-color: rgb(166, 50, 50);
+    padding: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  &-button {
+    font-size: 1em;
+    color: #fff;
+    background-color: variables.$color;
+    border-radius: .3em;
+    border: 0;
+    padding: .7em;
+    height: 2.5em;
+    margin-top: .2em;
+    margin-bottom: .8em;
+  }
+
+  @media (max-width: 550px) {
+    padding: 1em;
+    max-width: 80%;
+  }
+}

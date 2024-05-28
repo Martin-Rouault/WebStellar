@@ -1,0 +1,152 @@
+.exploration {
+  &-sun {
+    &-browser {
+      width: auto;
+      height: 83vh;
+      left: 0;
+    }
+  }
+
+  &-planets {
+    &-browser {
+      flex-direction: row;
+      padding: 0 10vh 0 15vh;
+      overflow-y: hidden;
+      overflow-x: scroll;
+    }
+  }
+
+  .infoPlanet-browser {
+    position: static;
+    max-width: 50vw;
+    width: 35vw;
+    margin: 0;
+  }
+
+  &-planet {
+    &-browser {
+      height: 83vh;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .planet-image {
+        transition: transform 1s;
+      }
+
+      .planet-image:hover {
+        transform: scale(1.15);
+      }
+
+      &.exploration-Mercure {
+        .planet-image {
+          height: 4%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Vénus {
+        .planet-image {
+          height: 12%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Terre {
+        .planet-image {
+          height: 13%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Mars {
+        .planet-image {
+          height: 8%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Jupiter {
+        .planet-image {
+          height: 40%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Saturne {
+        .planet-image {
+          height: 39%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Uranus {
+        .planet-image {
+          height: 20%;
+          width: auto;
+        }
+      }
+
+      &.exploration-Neptune {
+        .planet-image {
+          height: 19%;
+          width: auto;
+        }
+      }
+
+      &.exploration-planet-active {
+        .planet-image {
+          margin-bottom: 0;
+          margin-right: 2vw;
+          width: 20vw;
+          height: auto;
+          animation: 0.8s planetRoll;
+        }
+
+        .planet-image:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      &.exploration-planet-active {
+        .planet-image#Saturne {
+          margin-bottom: 0;
+          height: 25vh;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.exploration-browser {
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1b1c31;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #11111f;
+  } 
+}
+
+@keyframes planetRoll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

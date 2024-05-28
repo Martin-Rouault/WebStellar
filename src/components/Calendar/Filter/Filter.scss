@@ -1,0 +1,46 @@
+.filter-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4vh 0;
+  margin-top: 8vh;
+
+  fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 1.5vh;
+    }
+  }
+
+  legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+
+  label {
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  input[type="month"] {
+    width: 40%;
+    font-size: large;
+
+    @media (max-width: 900px) {
+      width: auto;
+    }
+  }
+}
+
+.filter-line {
+  width: 65%;
+}

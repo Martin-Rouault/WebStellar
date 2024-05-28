@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  height: 10vh;
+  padding: 0 3vw;
+
+  &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 0.7rem;
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  &-title {
+    font-size: 2vh;
+  }
+
+  &-title:hover {
+    text-decoration: underline #C29B5F;
+  }
+
+  &-rights {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5vh;
+  }
+}
+

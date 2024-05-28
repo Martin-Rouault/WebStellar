@@ -1,0 +1,94 @@
+.exploration {
+  margin-top: 7vh;
+  height: 83vh;
+  width: 100%;
+
+  &-sun {
+    width: 100%;
+    position: absolute;
+  }
+
+  &-planets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 2;
+    position: relative;
+    gap: 15vh;
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+  }
+
+  &-planet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-active {
+      position: relative;
+
+      .planet-image {
+        margin-bottom: 35vh;
+      }
+    }
+  }
+
+  .infoPlanet {
+    width: 90%;
+    position: absolute;
+    top: -13vh;
+  }
+
+  &-Mercure {
+    .planet-image {
+      width: 3%;
+    }
+  }
+
+  &-Vénus {
+    .planet-image {
+      width: 8%;
+    }
+  }
+
+  &-Terre {
+    .planet-image {
+      width: 8.5%;
+    }
+  }
+
+  &-Mars {
+    .planet-image {
+      width: 4.5%;
+    }
+  }
+
+  &-Jupiter {
+    .planet-image {
+      width: 57%;
+    }
+  }
+
+  &-Saturne {
+    .planet-image {
+      width: 99%;
+    }
+  }
+
+  &-Uranus {
+    .planet-image {
+      width: 29%;
+    }
+  }
+
+  &-Neptune {
+    .planet-image {
+      width: 28%;
+    }
+  }
+}

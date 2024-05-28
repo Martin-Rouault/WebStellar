@@ -1,0 +1,68 @@
+@use 'src/styles/variables';
+
+.login-form {
+  display: flex;
+
+  &-element {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e3ddd53f;
+    border-radius: .8em;
+    padding: 5em;
+    background-color: #e3ddd53f;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .field {
+      width: 100%;
+    }
+
+    @media (max-width: 550px) {
+      padding: 3em;
+    }
+  }
+
+  &-message {
+    margin: .3em 1em;
+  }
+
+  &-logged {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e3ddd53f;
+    border-radius: .8em;
+    padding: 5em;
+    background-color: #e3ddd53f;
+    margin: 0 auto;
+  }
+
+  &-button {
+    font-size: 1em;
+    color: #fff;
+    background-color: variables.$color;
+    border-radius: .3em;
+    border: 0;
+    padding: .7em;
+    height: 2.5em;
+    margin-top: .2em;
+    margin-bottom: .8em;
+  }
+
+  &-sign {
+    margin-top: 2em;
+    text-decoration: underline;
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use 'reset';
+@use 'variables'as v;
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: url("/assets/background.jpg");
+	height: auto;
+	background-size: cover;
+	width: 100%;
+	color: white;
+}
+
+body::-webkit-scrollbar {
+	width: 3px;
+}
+body::-webkit-scrollbar-track {
+	background: #1b1c31;
+}
+body::-webkit-scrollbar-thumb {
+	background: #353866;
+}
+
+body::-webkit-scrollbar {
+	width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1b1c31;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #353866;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.goldLine {
+	height: 2px;
+	margin: 0 auto;
+	background: #C29B5F;
+}
+
+h1, h2 {
+	font-family: 'Orbitron', sans-serif;
+}
+
+button {
+	color: white;
+}
